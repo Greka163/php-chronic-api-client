@@ -65,8 +65,8 @@ abstract class AbstractRgsClient
 			$this->logger->info(
 				'Отправлен запрос партнеру РГС',
 				[
-					$this->apiParams->getPartnerId(),
-					$request->getUri(),
+					'partnerId' => $this->apiParams->getPartnerId(),
+					'url' => $request->getUri(),
 					'request' => $request
 				]
 			);
